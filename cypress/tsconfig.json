@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "noEmit": false,
+    "target": "es5",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM",
+      "ES5"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@types/cypress-cucumber-preprocessor",
+      "cypress"
+    ],
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist",
+    "cypress/**/*",
+    "**/*.stories.js",
+    "**/*.stories.ts"
+  ]
+}
+

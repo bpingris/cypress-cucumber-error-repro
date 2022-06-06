@@ -1,0 +1,57 @@
+{
+    "name": "cypress-cucumber-after-each-hook",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "cy:open": "cypress open --config baseUrl=http://localhost:3333",
+        "cy:run": "cypress run --config baseUrl=http://localhost:3333"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "core-js": "^3.9.1",
+        "nuxt": "^2.15.7",
+        "patch-package": "^6.4.7",
+        "rollbar": "^2.24.0"
+    },
+    "devDependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^10.0.2",
+        "@cypress/browserify-preprocessor": "^3.0.2",
+        "@cypress/vue": "^2.2.3",
+        "@cypress/webpack-preprocessor": "^5.11.1",
+        "@nuxt/image": "0.6.0",
+        "@nuxt/types": "^2.15.8",
+        "@nuxt/typescript-build": "^2.1.0",
+        "@nuxtjs/eslint-config-typescript": "^8.0.0",
+        "@nuxtjs/eslint-module": "^3.0.2",
+        "@nuxtjs/style-resources": "^1.0.0",
+        "@nuxtjs/svg": "^0.1.12",
+        "@nuxtjs/tailwindcss": "^4.0.3",
+        "@types/cypress-cucumber-preprocessor": "^4.0.1",
+        "@types/google.analytics": "0.0.41",
+        "@types/googlemaps": "^3.43.3",
+        "@types/lokijs": "^1.5.7",
+        "@types/mixpanel-browser": "2.35.6",
+        "@vue/runtime-dom": "^3.2.31",
+        "@vue/test-utils": "^1.3.0",
+        "babel-eslint": "^10.1.0",
+        "c8": "^7.11.0",
+        "cross-fetch": "^3.1.5",
+        "cypress": "9.5.4",
+        "cypress-visual-regression": "^1.6.3",
+        "eslint": "^8.12.0",
+        "eslint-plugin-cypress": "^2.11.3",
+        "eslint-plugin-nuxt": "^3.1.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "eslint-plugin-vue": "^8.6.0",
+        "firebase-admin": "^10.2.0",
+        "happy-dom": "^2.41.0",
+        "just-scripts": "^1.8.2",
+        "mochawesome": "^7.0.1",
+        "nuxt-stripe-module": "^3.2.0",
+        "start-server-and-test": "^1.14.0",
+        "ts-node": "^9.1.1"
+    },
+    "cypress-cucumber-preprocessor": {
+        "stepDefinitions": "cypress/integration/**/*.ts"
+    }
+}

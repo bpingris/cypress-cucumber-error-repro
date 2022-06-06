@@ -1,0 +1,21 @@
+{
+  "defaultCommandTimeout": 80000,
+  "experimentalStudio": true,
+  "video": false,
+  "screenshot": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 768,
+  "ignoreTestFiles": "*.ts",
+  "testFiles": "**/*.feature",
+  "screenshotsFolder": "./cypress/snapshots",
+  "trashAssetsBeforeRuns": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false
+  },
+  "env": {
+    "failSilently": false
+  },
+  "experimentalInteractiveRunEvents": true
+}
+
